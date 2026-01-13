@@ -14,6 +14,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 
-map('n', '<A-p>', '<Cmd>BufferPrevious<CR>', opts)
-map('n', '<A-n>', '<Cmd>BufferNext<CR>', opts)
-map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
+map('n', '<A-p>', '<Cmd>tabprevious<CR>', opts)
+map('n', '<A-n>', '<Cmd>tabnext<CR>', opts)
+map('n', '<A-c>', '<Cmd>tabclose<CR>', opts)
+
+vim.opt.number=true
+-- vim.opt.termguicolors=true
