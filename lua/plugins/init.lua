@@ -21,12 +21,11 @@ return {
 		'nvim-tree/nvim-tree.lua',
     		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	},
-	{
-  		'https://codeberg.org/esensar/nvim-dev-container',
-  		dependencies = 'nvim-treesitter/nvim-treesitter'
-	},
+	-- { 'nvim-treesitter/nvim-treesitter', tag = "v0.10.0", lazy = false, build = ":TSUpdate" },
 	{'folke/tokyonight.nvim'},
   	{'neovim/nvim-lspconfig', tag = 'v1.8.0', pin = true},
   	{'hrsh7th/cmp-nvim-lsp'},
   	{'hrsh7th/nvim-cmp'},
+	{ "williamboman/mason.nvim", config = true },
+  	{ "williamboman/mason-lspconfig.nvim" },
 }
