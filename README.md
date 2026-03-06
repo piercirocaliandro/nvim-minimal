@@ -16,4 +16,5 @@ sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> ~/.bashrc
 source ~/.bashrc
 rm -rf ~/.config/nvim && git clone https://github.com/piercirocaliandro/nvim-minimal.git ~/.config/nvim
+sudo apt-get install -y ripgrep
 ```
